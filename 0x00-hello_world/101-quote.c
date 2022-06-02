@@ -1,9 +1,9 @@
-#include <unistd.h>                                                                                                                     
+#include <unistd.h>
 
-/**                                                                                                                                     
-  * main - Starting point of the program                                                                                                           *                                                                                                                                   
-  * Description: Writing without f print and puts
-  *
+/** main -starting point
+  * 
+  * Description: with write
+  * 
   * Return: Always 1 (Success)
   *
   */
