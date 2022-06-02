@@ -1,22 +1,16 @@
-#include <stdio.h>
+#include <unistd.h>                                                                                                                     
 
-/**
- *  main -the starting point of the program
- *
- *  Description: printing without fprint and puts
- *
- *  Return: prints 1 as ordered
- *
- */
-
+/**                                                                                                                                     
+  * main - Starting point of the program                                                                                                           *                                                                                                                                   
+  * Description: Writing without f print and puts
+  *
+  * Return: Always 1 (Success)
+  *
+  */
 int main(void)
 {
-	FILE *fp;
-	char str[] = "and that piece of art is useful" - Dora Korpar, 2015-10-19";
-
-	fp = fopen("file.txt", "w");
-
-	fwrite(str, 2, sizeof(str), fp);
-	fclose(fp);
+	char str1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	
+	write(2, str1, 59);
 	return (1);
 }
