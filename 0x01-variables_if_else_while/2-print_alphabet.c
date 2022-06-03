@@ -2,8 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *
- * main -starting point
+ * main - Entry point
  *
  * Description: character desplay
  * Return: 0 means succes
@@ -15,7 +14,7 @@ int main(void)
 	while (al <= 'z')
 	{
 		putchar(al);
-		al++;
+		++al;
 	}
 
 	return (0);
