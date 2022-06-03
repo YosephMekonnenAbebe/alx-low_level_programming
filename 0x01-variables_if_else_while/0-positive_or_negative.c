@@ -5,7 +5,7 @@
  * main -the starting point
  *
  * if else statement
- * Result: return 0 succes
+ * Return: return 0 succes
  */
 int main(void)
 {
