@@ -12,9 +12,10 @@ int main(void)
 	int a;
 
 	char al = 'a';
+
 	while (a <= 9)
 	{
-		putchar((a % 10)+ '0');	
+		putchar((a % 10) + '0');
 		a++;
 	}
 	while (al <= 'f')
