@@ -16,7 +16,7 @@ int main(void)
 		putchar(al);
 		++al;
 	}
-	printf("\n");
+	putchar(' ');
 
 	return (0);
 }
