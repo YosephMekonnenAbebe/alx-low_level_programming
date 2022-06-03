@@ -3,9 +3,8 @@
 #include <time.h>
 /**
  * main -the starting point
- * 
- * Description: if else
  *
+ * if else statement
  * Result: return 0 succes
  */
 int main(void)
@@ -22,5 +21,5 @@ int main(void)
 	else
 		printf("%d is negative\n", n);
 
-	return(0);
+	return (0);
 }
