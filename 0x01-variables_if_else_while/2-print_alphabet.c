@@ -14,9 +14,9 @@ int main(void)
 	while (al <= 'z')
 	{
 		putchar(al);
-		printf("\n");
 		++al;
 	}
+	printf("\n");
 
 	return (0);
 }
