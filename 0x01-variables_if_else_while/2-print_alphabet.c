@@ -5,14 +5,14 @@
  *
  * main -starting point
  *
- * description character desplay
+ * Description: character desplay
  * Return: 0 means succes
  */
 int main(void)
 {
 	char al = 'a';
 
-	while(al <= 'z')
+	while (al <= 'z')
 	{
 		putchar(al);
 		al++;
