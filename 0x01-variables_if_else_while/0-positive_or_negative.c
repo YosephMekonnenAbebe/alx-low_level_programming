@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main -the starting point
- *
+ * 
  * Description: if else
  *
  * Result: return 0 succes
