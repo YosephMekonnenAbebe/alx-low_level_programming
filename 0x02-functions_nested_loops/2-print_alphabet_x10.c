@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main -starting point
+ * print_alphabet_x10  -starting point
  *
  * Description: 10xalphabet
  * Return :0x10 a-z
