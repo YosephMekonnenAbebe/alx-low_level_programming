@@ -3,7 +3,7 @@
  * main -Starting point
  *
  * Description :Function prototype
- * Return 0 means succes
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 
 	int i = 0;
 
-	while(i < 8)
+	while (i < 8)
 	{
 	_putchar(str[i]);
 	++i;
