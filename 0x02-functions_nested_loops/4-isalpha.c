@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 /**
  * _isalpha -starting point
  * @c: a letter input
