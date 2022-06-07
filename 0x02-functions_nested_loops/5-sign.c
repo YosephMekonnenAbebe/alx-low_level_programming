@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign
+ * print_sign -starting point
  * @n: number to be scanned
  * Return:1 0 and -1
  */
