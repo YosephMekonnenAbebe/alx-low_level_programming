@@ -5,7 +5,7 @@
  * Description : character display
  * Return: 0 means succes
  */
-int main(void)
+void print_alphabet(void)
 {
 	char al = 'a';
 
