@@ -1,12 +1,11 @@
 #include "main.h"
 /**
  * add -starting point
- * @a,b: input
+ * @a: input1
+ * @b: input 2
  * Return: the value
  */
 int add(int a, int b);
 {
-	int c;
-	c = a + b;
-	return (c);
+	return a + b);
 }
