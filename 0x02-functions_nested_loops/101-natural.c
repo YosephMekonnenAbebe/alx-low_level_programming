@@ -11,18 +11,14 @@ int main (void)
 	int i = 0;
 	int sum = 0;
 	
-	char c;
-
 	for (i = 0; i < 1024; i++)
 	{
-	if (i % 3 == 0 || i % 5 == 0)
+	if ((i % 3) == 0 || (i % 5) == 0)
 	{
 	sum =sum + i;
 	}
 	}
-	c = (((sum % 10) + ((10 * sum) / 10)) + '0');
-	_putchar(c); 
-	_putchar('\n');
+	printf("%d\n", sum);
 	
 	return (0);
 }
