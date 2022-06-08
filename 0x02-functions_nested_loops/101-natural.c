@@ -18,7 +18,7 @@ int main (void)
 	sum =sum + i;
 	}
 	}
-	_putchar(sum + '0');
+	_putchar((sum % 10) +(sum / 10) + '0');
 	_putchar('\n');
 	
 	return (0);
