@@ -6,7 +6,7 @@
  * Description: sum
  * Return: o means succes
  */
-int main (void)
+int main(void)
 {
 	int i = 0;
 	int sum = 0;
@@ -15,10 +15,10 @@ int main (void)
 	{
 	if ((i % 3) == 0 || (i % 5) == 0)
 	{
-	sum =sum + i;
+	sum = sum + i;
 	}
 	}
 	printf("%d\n", sum);
-	
+
 	return (0);
 }
