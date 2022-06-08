@@ -16,7 +16,7 @@ int main(void)
 			break;
 
 		if((f_sum % 2) == 0)
-			t_sum t_sum + f_sum;
+			t_sum = t_sum + f_sum;
 
 		f1 = f2;
 		f2 = f_sum;
