@@ -29,13 +29,17 @@ int main (void)
 		ff1 = ff11 + ff21;
 		ff2 = ff12 + ff22;
 		if (ff12 + ff22 > 9999999999)
+		{
 			ff1 = ff1 + 1;
 			ff2 = ff2 % 10000000000;
+		}
 	}
 
 	printf("%lu%lu", ff1, ff2);
 	if (num != 98)
+	{
 		printf(", ");
+	}
 
 	ff11 = ff21;
 	ff12 = ff22;
