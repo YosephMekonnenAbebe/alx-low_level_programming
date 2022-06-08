@@ -8,8 +8,7 @@ int main(void)
 {
 	int num;
 	unsigned long f1 = 0, f2 = 1, sum;
-	unsigned long ff11, ff12, ff21, ff22;
-	unsigned long ff1, ff2;
+	unsigned long ff11, ff12, ff21, ff22, ff1, ff2;
 
 	for (num = 0; num < 92; num++)
 	{
@@ -23,7 +22,6 @@ int main(void)
 	ff21 = f2 / 10000000000;
 	ff12 = f1 % 10000000000;
 	ff22 = f2 % 10000000000;
-
 	for (num = 93; num < 99; num++)
 	{
 		ff1 = ff11 + ff21;
@@ -39,7 +37,6 @@ int main(void)
 	{
 		printf(", ");
 	}
-
 	ff11 = ff21;
 	ff12 = ff22;
 	ff21 = ff1;
