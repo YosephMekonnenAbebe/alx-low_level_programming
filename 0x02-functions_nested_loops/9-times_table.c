@@ -31,7 +31,7 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
-		else if ((k > 9) || (i *(j+1) >= 10))
+		else if ((k => 9) || (i *(j+1) >= 10))
 		{
 			if (j !=9)
 			{
