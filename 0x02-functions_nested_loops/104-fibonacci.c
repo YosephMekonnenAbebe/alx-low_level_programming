@@ -33,8 +33,7 @@ int main (void)
 			ff1 = ff1 + 1;
 			ff2 = ff2 % 10000000000;
 		}
-	}
-
+	
 	printf("%lu%lu", ff1, ff2);
 	if (num != 98)
 	{
@@ -45,7 +44,8 @@ int main (void)
 	ff12 = ff22;
 	ff21 = ff1;
 	ff22 = ff2;
-}
-printf("\n");
-return (0);
+	}
+	printf("\n");
+
+	return (0);
 }
