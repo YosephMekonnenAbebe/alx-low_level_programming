@@ -10,6 +10,8 @@ int main (void)
 {
 	int i = 0;
 	int sum = 0;
+	
+	char c;
 
 	for (i = 0; i < 1024; i++)
 	{
@@ -18,7 +20,8 @@ int main (void)
 	sum =sum + i;
 	}
 	}
-	_putchar((sum % 10) +(sum / 10) + '0');
+	c = (((sum % 10) + ((10 * sum) / 10)) + '0');
+	_putchar(c); 
 	_putchar('\n');
 	
 	return (0);
