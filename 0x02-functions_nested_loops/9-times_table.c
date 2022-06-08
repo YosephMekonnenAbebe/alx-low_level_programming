@@ -31,7 +31,16 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
-		else if ((k => 9) || (i *(j+1) >= 10))
+		else if (k < 9)
+		{
+			if ((j !=9) && (i *(j+1) >= 10))
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+
+		else
 		{
 			if (j !=9)
 			{
