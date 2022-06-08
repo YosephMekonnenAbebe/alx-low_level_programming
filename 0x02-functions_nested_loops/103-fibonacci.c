@@ -2,7 +2,7 @@
 /**
  * main -starting point
  * Description: fibo
- * Return 0: succes
+ * Return: 0 succes
  */
 int main(void)
 {
@@ -15,7 +15,7 @@ int main(void)
 		if (f_sum > 4000000)
 			break;
 
-		if((f_sum % 2) == 0)
+		if ((f_sum % 2) == 0)
 			t_sum = t_sum + f_sum;
 
 		f1 = f2;
