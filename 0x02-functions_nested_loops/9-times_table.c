@@ -24,7 +24,7 @@ void times_table(void)
 	{
 		_putchar(' ');
 	}
-	if (cone < 9)
+	if (cn < 9)
 	{
 	_putchar(',');
 	_putchar(' ');
