@@ -24,14 +24,14 @@ void times_table(void)
 	       }
 		if (k < 9)
 		{
-			if ((j !=9) && (i *(j+1) < 10))
+			if ((j !=9) && (i *(j+1) <= 10))
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 			}
 		}
-		else
+		else if ((k > 9) || (i *(j+1) >= 10))
 		{
 			if (j !=9)
 			{
