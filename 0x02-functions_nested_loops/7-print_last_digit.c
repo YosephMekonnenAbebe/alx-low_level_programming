@@ -15,6 +15,5 @@ int print_last_digit(int a)
 	mod = (-mod);
 	}
 	_putchar(mod + '0');
-	
 	return (mod);
 }
