@@ -5,7 +5,7 @@
  * @b: input 2
  * Return: the value
  */
-int add(int a, int b);
+int add(int a, int b)
 {
 	return a + b);
 }
