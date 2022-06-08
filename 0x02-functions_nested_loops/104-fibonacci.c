@@ -39,7 +39,7 @@ int main(void)
 	{
 		printf(", ");
 	}
-	
+
 	ff11 = ff21;
 	ff12 = ff22;
 	ff21 = ff1;
