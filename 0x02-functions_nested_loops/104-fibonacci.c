@@ -4,7 +4,7 @@
  * description: fibonaci
  * Return: 0 means succes
  */
-int main (void)
+int main(void)
 {
 	int num;
 	unsigned long f1 = 0, f2 = 1, sum;
