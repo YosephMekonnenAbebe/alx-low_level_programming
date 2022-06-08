@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main -Starting point
+ * print_alphabet -Starting point
  *
  * Description : character display
  * Return: 0 means succes
@@ -11,8 +11,8 @@ void print_alphabet(void)
 
 	while (al <= 'z') 
 	{
-	print_alphabet(al);
+	_putchar(al);
 	++al;
 	}
-	print_alphabet('\n');
+	_putchar('\n');
 }
