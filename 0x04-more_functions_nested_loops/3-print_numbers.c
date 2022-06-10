@@ -5,7 +5,6 @@
  * Description: prints a number
  * Return: void
  */
-
 void print_numbers(void)
 {
 	int num = 0;
