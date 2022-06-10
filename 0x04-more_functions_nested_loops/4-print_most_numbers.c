@@ -2,9 +2,9 @@
 
 /**
  * print_most_numbers -starting point
+ * @num: the number
  * Return: nothing
  */
-
 void print_most_numbers(void)
 {
 	int num = 0;
