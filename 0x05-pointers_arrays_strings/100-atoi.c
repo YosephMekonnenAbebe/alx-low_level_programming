@@ -22,5 +22,5 @@ for (b = 0; s[b] != '\0'; b++)
 	else if (s[b - 1] >= 0 + '0' && s[b - 1] < 10 + '0')
 		break;
 }
-return (num *a);
+return (num * a);
 }
