@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main -starting point
- *
+ * _atoi -starting point
+ *@s: input
  * Return: always 0
  */
-int main(void)
+int _atoi(char *s)
 {
 	int nb;
 
