@@ -6,28 +6,22 @@
  *@s: input
  * Return: always 0
  */
-int _atoi(void)
+int _atoi(char *s)
 {
-	int nb;
+	int a = 1;, b = 0;
+	unsigned int num = 0;
 
-	nb = _atoi("98");
-	printf("%d\n", nb);
-	nb = _atoi("-402");
-	printf("%d\n", nb);
-	nb = _atoi("          ------++++++-----+++++--98");
-	printf("%d\n", nb);
-	nb = _atoi("214748364");
-	printf("%d\n", nb);
-	nb = _atoi("0");
-	printf("%d\n", nb);
-	nb = _atoi("Suite 402");
-	printf("%d\n", nb);
-	nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
-	printf("%d\n", nb);
-	nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
-	printf("%d\n", nb);
+for (b = 0; s[b] != '\0'; b++)
+{
+	if (s[b] == '-')
+		a *= -1;
 
-	return (0);
+	else if (s[b] >= 0 + '0' && s[b] < 10 + '0')
+		num = num * 10 + (s[b] - '0');
+
+	else if (s[b - 1] >= 0 + '0' && s[b - 1] < 10 + '0')
+		break;
 }
 
-	
+return (num *a);
+}
