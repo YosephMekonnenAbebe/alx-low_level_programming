@@ -7,6 +7,7 @@
  * @s: input string
  * Return:length
  */
+
 int _strlen(char *s)
 {
 	int j = 1, sum = 0;
