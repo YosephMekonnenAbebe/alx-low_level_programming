@@ -23,7 +23,7 @@ int main(void)
 	{
 		pw[a] = rand() % 78;
 		sum += (pw[a] + '0');
-		putchar(pass[a] + '0');
+		putchar(pw[a] + '0');
 		if ((2772 - sum) - '0' < 78)
 		{
 			b = 2772 - sum - '0';
