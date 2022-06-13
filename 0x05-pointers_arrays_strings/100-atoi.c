@@ -6,7 +6,7 @@
  *@s: input
  * Return: always 0
  */
-int _atoi(char *s)
+int _atoi(void)
 {
 	int nb;
 
