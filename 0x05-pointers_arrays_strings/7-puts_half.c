@@ -1,6 +1,7 @@
 #include "main.h"
 
-/**puts_half -starting point
+/**
+ * puts_half -starting point
  * Description: odd print
  * @str: input
  * Return: String odd
@@ -13,7 +14,6 @@ void puts_half(char *str)
 
 	for (j = 0; str[j] != '\0'; j++)
 		m++;
-	
 	n = (m / 2);
 
 	if ((m % 2) == 1)
