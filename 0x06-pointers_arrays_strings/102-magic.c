@@ -4,10 +4,10 @@ int main(void)
 {
 	int m;
 	int z[5];
-	int *o;
+	int *p;
 
 	z[2] = 1024;
-	o = &m;
+	p = &m;
 	/*
 	 * writere...
 	 * Rmr:
@@ -16,7 +16,7 @@ int main(void)
 	 * - on
 	 * - yo
 	 */
-	o[5] = 98;
+	p[5]=98;
 	/* ...prints 98\n */
 	printf("z[2] = %d\n", z[2]);
 	return (0);
