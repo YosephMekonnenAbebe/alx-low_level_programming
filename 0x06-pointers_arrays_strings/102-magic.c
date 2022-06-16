@@ -6,7 +6,7 @@ int main(void)
 	int a[5];
 	int *p;
 
-	a[2] = 127;
+	a[2] = 512;
 	p = &n;
 	/*
 	 * write your line of code here...
