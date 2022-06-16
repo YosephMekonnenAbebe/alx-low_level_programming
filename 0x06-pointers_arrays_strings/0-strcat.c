@@ -1,7 +1,7 @@
 #include "main.h" 
 
 /**
- *
+ * _strcat -starting point
  * Description: string concatinate
  * @dest: input1
  * @src
