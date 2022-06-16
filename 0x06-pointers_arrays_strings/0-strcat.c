@@ -3,7 +3,7 @@
  * _strcat -starting point
  * Description: string concatinate
  * @dest: input1
- * @src
+ * @src: input2
  *
  *Return: succes dest
  */
