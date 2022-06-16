@@ -5,6 +5,7 @@
  * @dest: input 1
  * @src: input 2
  * @n: point of coppy
+ * Return: return dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
