@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - starting point
- *
- * Return: nothing
- */
-
 int main(void)
 {
 	int m;
@@ -23,7 +17,7 @@ int main(void)
 	 * - yo
 	 */
 	o[5] = 98;
-	/* ...so that this prints 98\n */
+	/* ...prints 98\n */
 	printf("z[2] = %d\n", z[2]);
 	return (0);
 }
