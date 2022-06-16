@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * cap_string - starting
- * @src: input
+ * @str: input
  *
  * Return: capitalize it
  */
