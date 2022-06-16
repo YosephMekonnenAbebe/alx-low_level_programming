@@ -6,6 +6,7 @@
  * Description: string concatinate
  * @dest: input1
  * @src
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
