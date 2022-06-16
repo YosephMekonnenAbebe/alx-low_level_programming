@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+
 /**
  * main - starting point
  *
@@ -8,22 +8,22 @@
 
 int main(void)
 {
-	int n;
-	int a[5];
-	int *p;
+	int m;
+	int z[5];
+	int *o;
 
-	a[2] = 1024;
-	p = &n;
+	z[2] = 1024;
+	o = &m;
 	/*
-	 * write your line of code here...
-	 * Remember:
-	 * - you are not allowed to use a
-	 * - you are not allowed to modify p
-	 * - only one statement
-	 * - you are not allowed to code anything else than this line of code
+	 * writere...
+	 * Rmr:
+	 * - yo a
+	 * - yo p
+	 * - on
+	 * - yo
 	 */
-	*(p + 5) = 98;
+	o[5] = 98;
 	/* ...so that this prints 98\n */
-	printf("a[2] = %d\n", a[2]);
+	printf("z[2] = %d\n", z[2]);
 	return (0);
 }
