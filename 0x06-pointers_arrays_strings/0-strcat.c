@@ -5,7 +5,7 @@
  * Description: string concatinate
  * @dest: input1
  * @src
- * eturn: dest
+ *Return: succes dest
  */
 char *_strcat(char *dest, char *src)
 {
@@ -20,7 +20,8 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	_putchar(dest);
+
+	return (dest);
 }
 
 
