@@ -5,7 +5,7 @@
  * @src: input 2
  * @n: number for concatinate
  *
- * Return: dest
+ * Retun: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -18,6 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
+
 	for(j = 0; (src[j] != '\0' && j < n); j++)
 	{
 		dest[i] = src[j];
