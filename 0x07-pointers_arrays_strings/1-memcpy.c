@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _memcpy - function starting point
- * dest: pointer
+ * @dest: pointer
  * @src: pointer 2
  * @n: intigerinput
  *
