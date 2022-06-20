@@ -7,6 +7,7 @@
  * Return: the number
  */
 unsigned int _strspn(char *s, char *accept)
+{
 	int leng = 0;
 	int x = 0;
 	int y = 0;
