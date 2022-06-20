@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * _strchr - starting function
- * @s: pointer1
- * @c: Character input
- * Return: has a return
+ * _strchr - locates a character
+ * @s: the memory 
+ * @c: constant 
+ *
+ * Return: a pointer
  */
 char *_strchr(char *s, char c)
 {
