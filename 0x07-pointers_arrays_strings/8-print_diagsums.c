@@ -9,15 +9,20 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int x, m;
+	int x, y, m;
 
 	int t1 = 0;
 	int t2 = 0;
 
-	for (x = 0; x <= (size * size); x = x + size + 1)
-		t1 = t1 + a[x];
-
-	for (m = size - 1; m <= (size * size) - size; m = m + size - 1)
-		t2 = t2 + a[m];
-		printf("%d, %d\n", t1, t2);
+	for (x = 0; x < size; x++)
+	{
+		m = (x * size) + x;
+		t1 += *(a + m);
+	}
+	for (y = 0; y < size; y++)
+	{
+		m = (y * size) + (size - 1 - y);
+		r += *(a + p);
+	}
+	printf("%d, %d\n", t1, t2);
 }
