@@ -17,12 +17,12 @@ void print_diagsums(int *a, int size)
 	for (x = 0; x < size; x++)
 	{
 		m = (x * size) + x;
-		t1 += *(a + m);
+		t1 = t1 + *(a + m);
 	}
 	for (y = 0; y < size; y++)
 	{
 		m = (y * size) + (size - 1 - y);
-		r += *(a + p);
-	}
+		t2 = t2 + *(a + p);
+	i}
 	printf("%d, %d\n", t1, t2);
 }
