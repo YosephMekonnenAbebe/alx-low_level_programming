@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  * _strchr - starting function
- * @s: Pointer1
+ * @s: pointer1
  * @c: Character input
- *
  * Return: has a return
  */
 char *_strchr(char *s, char c)
