@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strchr - locates a character
- * @s: the memory 
- * @c: constant 
+ * @s: the memor
+ * @c: constan
  *
  * Return: a pointer
  */
