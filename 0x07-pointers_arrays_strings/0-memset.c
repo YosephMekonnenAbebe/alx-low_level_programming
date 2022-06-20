@@ -7,13 +7,13 @@
  *
  * Return: the area of s
  */
-char *_memset(char *s, char b, unsigned int num)
+char *_memset(char *s, char b, unsigned int i)
 {
-unsigned int num;
+unsigned int i;
 
-for (num = 0; num < n; num++)
+for (i = 0; i < n; i++)
 {
-s[num] = b;
+s[i] = b;
 }
 }
 return (s);
