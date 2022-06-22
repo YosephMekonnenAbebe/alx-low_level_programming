@@ -1,5 +1,5 @@
 #include "main.h"
-int squareroot(int n, int m);
+int root(int n, int m);
 /**
  * _sqrt_recursion - start point
  * @n: input
