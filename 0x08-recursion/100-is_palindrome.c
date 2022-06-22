@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strlen - return 
+ * _strlen - return
  * @str: string
  *
  * Return: length
@@ -30,8 +30,8 @@ int _palindrome(int l, int r, char *p)
 		return (_palindrome(l + 1, r - 1, p));
 }
 /**
- * is_palindrome - states 
- * @s: string
+ * is_palindrome - states
+ * @s: strin
  *
  * Return: 1
  */
