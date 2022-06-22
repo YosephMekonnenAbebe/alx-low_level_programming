@@ -22,7 +22,7 @@ int root(int n, int m)
 {
 	if (m < 1)
 		return (-1);
-	else if (i * i == m)
+	else if (m * m == n)
 		return (m);
 	else
 		return (root(n, m - 1));
