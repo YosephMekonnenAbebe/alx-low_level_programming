@@ -18,7 +18,6 @@ int _sqrt_recursion(int n)
 int root(int n, int m)
 {
 	int rt = m * m;
-	
 	if (rt > n)
 		return (-1);
 	if (rt == n)
