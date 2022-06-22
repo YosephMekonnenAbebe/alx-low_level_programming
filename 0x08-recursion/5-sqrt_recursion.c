@@ -19,14 +19,11 @@ int _sqrt_recursion(int n)
  * Return: root
  */
 int root(int n, int m)
-{	
-	if (m < 1 || m * m == n)
-		{
-			if (m * m == n)
-				return (m);
-			else
-				return (-1);
-		}
-		else
-			return (root(n, m - 1));
+{
+	if (m * m == n)
+		return (m);
+	else if (m < 1)
+		return (-1);
+	else
+		return (root(n, m - 1));
 }
