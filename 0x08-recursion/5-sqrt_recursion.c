@@ -20,10 +20,10 @@ int _sqrt_recursion(int n)
  */
 int root(int n, int m)
 {
-	if (m * m == n)
-		return (m);
-	else if (m < 1)
+	if (m < 1)
 		return (-1);
+	else if (i * i == m)
+		return (m);
 	else
 		return (root(n, m - 1));
 }
