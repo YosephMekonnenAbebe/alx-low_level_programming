@@ -12,13 +12,13 @@
 
 int main(int argc, char *argv[])
 {
-int count = 1;
+int count;
 int ad = 0;
 
 if (argc < 1)
 return (0);
 
-while (count < argc)
+for (count = 1; count < argc; count++)
 {
 if (!atoi(argv[count]))
 {
@@ -26,8 +26,8 @@ printf("%s\n", "Error");
 return (1);
 }
 ad += atoi(argv[count]);
-count++;
 }
 printf("%d\n", ad);
+
 return (0);
 }
