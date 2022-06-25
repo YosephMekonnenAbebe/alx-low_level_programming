@@ -4,30 +4,39 @@
 #include <string.h>
 #include <ctype.h>
 /**
- * main -adds a number
- * @argc: Numbers of line comands
- * @argv: value
- * Return: 1 for succes
+ * main - Program
+ * @argc: Number
+ * @argv: A
+ * Return: 1 if not succes
  */
-
 int main(int argc, char *argv[])
 {
-int count;
-int ad = 0;
+	int i, j, length, sum;
+	char *ptr;
 
-if (argc < 1)
-return (0);
+	if (argc < 2)
+		printf("0\n");
+	else
+	{
+		sum = 0;
+		for (i = 1; i < argc; i++)
+		{
+			ptr = argv[i];
+			length = strlen(ptr);
 
-for (count = 1; count < argc; count++)
-{
-if (!atoi(argv[count]))
-{
-printf("%s\n", "Error");
-return (1);
+			for (j = 0; j < length; j++)
+			{
+				if (isdigit(*(ptr + j)) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+			sum += atoi(argv[i]);
+		}
+		printf("%d\n", sum);
+	}
+	return (0);
 }
-ad += atoi(argv[count]);
-}
-printf("%d\n", ad);
 
-return (0);
-}
+		  
