@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * main - Program that
- * @argc: Number 
+ * @argc: Number
  * @argv: Arra
  * Return: 1 if succes
  */
@@ -19,6 +19,8 @@ int main(int argc, char *argv[])
 	else
 	{
 		j = 1;
+
+
 		 for (i = 1; i < 3; i++)
 			 j *= atoi(argv[i]);
 
