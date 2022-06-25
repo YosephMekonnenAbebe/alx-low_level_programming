@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int count = 0;
-	int add = 0;
+	int ad = 0;
 
 	if (argc < 1)
 		return (0);
@@ -24,10 +24,10 @@ int main(int argc, char *argv[])
 			printf("%s\n", "Error");
 			return (1);
 		}
-		add += atoi(argv[count]);
+		ad += atoi(argv[count]);
 		count++;
 	}
-	printf("%d\n", add);
+	printf("%d\n", ad);
 
 	return (0);
 }
