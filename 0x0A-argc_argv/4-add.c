@@ -12,22 +12,22 @@
 
 int main(int argc, char *argv[])
 {
-	int count = 0;
-	int ad = 0;
+int count = 0;
+int ad = 0;
 
-	if (argc < 1)
-		return (0);
-	while (count < argc)
-	{
-		if (!atoi(argv[count]))
-		{
-			printf("%s\n", "Error");
-			return (1);
-		}
-		ad += atoi(argv[count]);
-		count++;
-	}
-	printf("%d\n", ad);
+if (argc < 1)
+return (0);
 
-	return (0);
+while (count < argc)
+{
+if (!atoi(argv[count]))
+{
+printf("%s\n", "Error");
+return (1);
+}
+ad += atoi(argv[count]);
+count++;
+}
+printf("%d\n", ad);
+return (0);
 }
