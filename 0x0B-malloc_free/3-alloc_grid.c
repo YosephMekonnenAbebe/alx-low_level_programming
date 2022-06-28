@@ -25,14 +25,14 @@ int **alloc_grid(int width, int height)
 		if (*(mat + l) == NULL)
 		{
 			for (l = 0; l < height; l++)
-				{
-					o = mat[l];
-					free(o);
-				}
-				free(mat);
-				return (NULL);
+			{
+				o = mat[l];
+				free(o);
 			}
+			free(mat);
+			return (NULL);
 		}
+	}
 	for (n = 0; n < height; n++)
 	{
 		for (m = 0; m < width; m++)
