@@ -27,6 +27,6 @@ for (j = 0; j < m; j++)
 strn[j] = str[j];
 
 if (strn == NULL)
-retrn (NULL);
+return (NULL);
 return (strn);
 }
