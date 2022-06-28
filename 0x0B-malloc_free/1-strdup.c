@@ -28,5 +28,6 @@ strn[j] = str[j];
 
 if (strn == NULL)
 return (NULL);
+strn[j] = '\0';
 return (strn);
 }
