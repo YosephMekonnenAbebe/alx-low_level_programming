@@ -52,7 +52,7 @@ int count_words(char *str)
  * strtow - Splits a string into words.
  * @str: The string to be split.
  *
- * Return: If str = NULL, str 
+ * Return: If str = NULL, str
  */
 char **strtow(char *str)
 {
