@@ -35,7 +35,7 @@ strn[j] = s1[j];
 for (; s2[counter] != '\0'; j++)
 {
 	strn[j] = s2[counter];
-	counter;
+	counter++;
 }
 return (strn);
 }
