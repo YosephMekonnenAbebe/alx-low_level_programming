@@ -20,7 +20,7 @@ while (i < ac)
 while (av[i][j] != '\0')
 {
 e++;
-j++
+j++;
 }
 i++;
 }
@@ -33,8 +33,8 @@ while (i < ac)
 while (av[i][j] != '\0')
 {
 ptr[k] = av[i][j];
-k++
-j++
+k++;
+j++;
 }
 ptr[k] = '\n';
 k++;
