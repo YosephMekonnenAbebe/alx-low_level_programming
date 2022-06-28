@@ -10,25 +10,23 @@
  */
 char *_strdup(char *str)
 {
-	char *strn = NULL;
-	int j;
-	int m;
+char *strn;
+int j;
+int m;
 
-	if (str == NULL)
-		return (NULL);
-	for (m = 0; str[m] != '\0'; m++)
-		;
-	strn = (char *)malloc(m + 1 * sizeof(char));
-	if (strn != NULL)
-	{
-		for (j = 0; str[j] != '\0'; j++)
-			strn[j] = str[j];
-	}
-	else
-	{
-		return (NULL);
-	}
-	return (NULL);
+if (str == NULL)
+return (NULL);
+for (m = 0; m <= *str; m++)
+{
 }
-strn[j] = '\0';
+
+m += 1;
+strn = malloc(sizeof(char) * m);
+
+for (j = 0; j < m; j++)
+strn[j] = str[j];
+
+if (strn == NULL)
+retrn (NULL);
 return (strn);
+}
