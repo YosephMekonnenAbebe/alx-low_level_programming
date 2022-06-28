@@ -10,24 +10,24 @@
  */
 char *_strdup(char *str)
 {
-char *strn;
-int j;
-int m;
+	char *st = NULL;
+	unsigned int ii;
+	int nn;
 
-if (str == NULL)
-return (NULL);
-
-for (m = 0; m <= *str; m++)
-{
-}
-
-m += 1;
-strn = malloc(sizeof(char) * m);
-
-for (j = 0; j < m; j++)
-strn[j] = str[j];
-
-if (strn == NULL)
-return (NULL);
-return (strn);
+	if (str == NULL)
+		return (NULL);
+	for (nn = 0; strn[nn] != '\0'; nn++)
+		;
+	st = (char *)malloc(nn + 1 * sizeof(char));
+	if (st != NULL)
+	{
+		for (ii = 0; str[ii] != '\0'; ii++)
+			strnew[ii] = str[ii];
+	}
+	else
+	{
+		return (NULL);
+	}
+	st[ii] = '\0';
+	return (st);
 }
