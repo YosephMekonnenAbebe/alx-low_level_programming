@@ -1,149 +1,129 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-
 /**
- * _print - moves a string
- * @str: string
- * @l: size
- *
- * Return: void
+ * int_calloc - special
+ * @nmemb: n
+ * @size: size
+ * Return: int 
  */
-void _print(char *str, int l)
+int *int_calloc(int nmemb, unsigned int size)
 {
-	int i, j;
+	int *p, n;
 
-	i = j = 0;
-	while (i < l)
-	{
-		if (str[i] != '0')
-			j = 1;
-		if (j || i == l - 1)
-			_putchar(str[i]);
-		i++;
-	}
-
-	_putchar('\n');
-	free(str);
-}
-
-/**
- * mul - multiplie
- * @n: char
- * @num: string
- * @num_index: last
- * @dest: destination
- * @dest_index: highest
- *
- * Return: pointer
- */
-char *mul(char n, char *num, int num_index, char *dest, int dest_index)
-{
-	int j, k, mul, mulrem, add, addrem;
-
-	mulrem = addrem = 0;
-	for (j = num_index, k = dest_index; j >= 0; j--, k--)
-	{
-		mul = (n - '0') * (num[j] - '0') + mulrem;
-		mulrem = mul / 10;
-		add = (dest[k] - '0') + (mul % 10) + addrem;
-		addrem = add / 10;
-		dest[k] = add % 10 + '0';
-	}
-	for (addrem += mulrem; k >= 0 && addrem; k--)
-	{
-		add = (dest[k] - '0') + addrem;
-		addrem = add / 10;
-		dest[k] = add % 10 + '0';
-	}
-	if (addrem)
-	{
+	if (nmemb == 0 || size == 0)
 		return (NULL);
-	}
-	return (dest);
-}
-/**
- * check_for_digits - checks
- * @av: pointer
- *
- * Return: 0 if digits
- */
-int check_for_digits(char **av)
-{
-	int i, j;
-
-	for (i = 1; i < 3; i++)
-	{
-		for (j = 0; av[i][j]; j++)
-		{
-			if (av[i][j] < '0' || av[i][j] > '9')
-				return (1);
-		}
-	}
-	return (0);
+	p = malloc(nmemb * size);
+	if (p == NULL)
+		return (NULL);
+	for (n = 0; n < nmemb; n++)
+		p[n] = 0;
+	return (p);
 }
 
 /**
- * init - initializes
- * @str: sting
- * @l: length
- *
+ * mult - mult
+ * @product: int
+ * @n1: string
+ * @n2: string
+ * @len1: len
+ * @len2: len
  * Return: void
  */
-void init(char *str, int l)
+void mult(int *product, char *n1, char *n2, int len1, int len2)
+{
+	int i;
+	int j;
+	int f1, f2;
+	int sum;
+	for (i = len1 - 1; i >= 0; i--)
+	{
+		sum = 0;
+		f1 = n1[i] - '0';
+		for (j = len2 - 1; j >= 0; j--)
+		{
+			f2 = n2[j] - '0';
+			sum += product[i + j + 1] + (f1 * f2);
+			product[i + j + 1] = sum % 10;
+			sum /= 10;
+		}
+		if (sum > 0)
+			product[i + j + 1] += sum;
+	}
+	for (i = 0; product[i] == 0 && i < len1 + len2; i++)
+	{}
+	if (i == len1 + len2)
+		_putchar('0');
+	for (; i < len1 + len2; i++)
+		_putchar(product[i] + '0');
+	_putchar('\n');
+}
+
+/**
+ * is_valid - is the number a valid one
+ * @num : char string num
+ * Return: int, 1 if true 0 if false
+ */
+int is_valid(char *num)
 {
 	int i;
 
-	for (i = 0; i < l; i++)
-		str[i] = '0';
-	str[i] = '\0';
+	for (i = 0; num[i]; i++)
+	{
+		if (num[i] < '0' || num[i] > '9')
+			return (0);
+	}
+	return (1);
 }
-
 /**
- * main - multiply
- * @argc: number
- * @argv: argument
- *
- * Return: zero
+ * err - errors
+ * @status: error
+ * Return: void
  */
-int main(int argc, char *argv[])
+void err(int status)
 {
-	int num1, num2, ln, ti, i;
-	char *a;
-	char *t;
-	char e[] = "Error\n";
+	_putchar('E');
+	_putchar('r');
+	_putchar('r');
+	_putchar('o');
+	_putchar('r');
+	_putchar('\n');
+	exit(status);
+}
+/**
+ * main - getting 
+ * @argc: args
+ * @argv: arg2
+ * Return: 0
+ */
+int main(int argc, char **argv)
+{
+	int i, j, len1 = 0, len2 = 0;
+	int *res;
 
-	if (argc != 3 || check_for_digits(argv))
+	if (argc != 3)
 	{
-		for (ti = 0; e[ti]; ti++)
-			_putchar(e[ti]);
-		exit(98);
+		err(98);
 	}
-	for (num1 = 0; argv[1][num1]; num1++)
-		;
-	for (num2 = 0; argv[2][num2]; num2++)
-		;
-	ln = num1 + num2 + 1;
-	a = malloc(ln * sizeof(char));
-	if (a == NULL)
+	for (i = 1; i < argc; i++)
 	{
-		for (ti = 0; e[ti]; ti++)
-			_putchar(e[ti]);
-		exit(98);
-	}
-	init(a, ln - 1);
-	ti = num2 - 1;
-
-	for (i = 0; ti >= 0; ti--, i++)
-	{
-		t = mul(argv[2][ti], argv[1], num1 - 1, a, (ln - 2) - i);
-		if (t == NULL)
+		if (!(is_valid(argv[i])))
+			err(98);
+		if (i == 1)
 		{
-			for (ti = 0; e[ti]; ti++)
-				_putchar(e[ti]);
-			free(a);
-			exit(98);
+			for (j = 0; argv[i][j]; j++)
+				len1++;
+		}
+		if (i == 2)
+		{
+			for (j = 0; argv[i][j]; j++)
+				len2++;
 		}
 	}
-	_print(a, ln - 1);
+	res = int_calloc(len1 + len2, sizeof(int));
+	if (res == NULL)
+		err(98);
+	mult(res, argv[1], argv[2], len1, len2);
+	free(res);
 	return (0);
 }
