@@ -27,12 +27,12 @@ void _print(char *str, int l)
 }
 
 /**
- * mul - multiplies 
- * @n: char 
+ * mul - multiplie
+ * @n: char
  * @num: string
  * @num_index: last
  * @dest: destination
- * @dest_index: highest 
+ * @dest_index: highest
  *
  * Return: pointer
  */
@@ -63,7 +63,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 }
 /**
  * check_for_digits - checks
- * @av: pointer 
+ * @av: pointer
  *
  * Return: 0 if digits
  */
@@ -84,7 +84,7 @@ int check_for_digits(char **av)
 
 /**
  * init - initializes
- * @str: sting 
+ * @str: sting
  * @l: length
  *
  * Return: void
@@ -131,9 +131,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	init(a, ln - 1);
-	ti = l2 - 1;
-
-	for (i = 0; ti >= 0; ti--, i++)
+	for (ti = l2 - 1, i = 0; ti >= 0; ti--, i++)
 	{
 		t = mul(argv[2][ti], argv[1], l1 - 1, a, (ln - 2) - i);
 		if (t == NULL)
