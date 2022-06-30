@@ -13,6 +13,7 @@ int *array_range(int min, int max)
 {
 	int *lists, lengths;
 	int append = 0;
+
 	if (min > max)
 		return (NULL);
 
