@@ -83,6 +83,22 @@ int check_for_digits(char **av)
 }
 
 /**
+ * init - initializes
+ * @str: sting 
+ * @l: length
+ *
+ * Return: void
+ */
+void init(char *str, int l)
+{
+	int i;
+
+	for (i = 0; i < l; i++)
+		str[i] = '0';
+	str[i] = '\0';
+}
+
+/**
  * main - multiply
  * @argc: number
  * @argv: argument
@@ -111,10 +127,11 @@ int main(int argc, char *argv[])
 	if (a == NULL)
 	{
 		for (ti = 0; e[ti]; ti++)
-			exit(98);
+			_putchar(e[ti]);
+		exit(98);
 	}
 	init(a, ln - 1);
-	ti = l2 - 1
+	ti = l2 - 1;
 
 	for (i = 0; ti >= 0; ti--, i++)
 	{
