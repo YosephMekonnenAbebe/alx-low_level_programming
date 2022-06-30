@@ -16,7 +16,7 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	size = max - min + 1;
+	lengths = max - min + 1;
 
 	lists = malloc(sizeof(int) * lengths);
 
