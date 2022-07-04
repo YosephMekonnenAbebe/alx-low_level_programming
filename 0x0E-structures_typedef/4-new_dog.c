@@ -31,6 +31,9 @@ char *_strdup(char *s)
 	return (dup);
 }
 
+
+
+
 /**
  * new_dog - create
  * @name: first input
