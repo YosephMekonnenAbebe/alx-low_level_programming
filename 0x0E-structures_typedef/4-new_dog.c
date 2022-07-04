@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _strdup - returns 
+ * _strdup - returns
  * @s: pointer
  * Return: Pointer
  */
