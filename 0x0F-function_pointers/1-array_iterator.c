@@ -4,7 +4,7 @@
  * array_iterator - executes a function parameter.
  * @array: pointer to integer array.
  * @size:  size of an array.
- * action: a pointer to the function you need to use.
+ * @action: a pointer to the function you need to use.
  * Return: nothing to return.
  */
 
