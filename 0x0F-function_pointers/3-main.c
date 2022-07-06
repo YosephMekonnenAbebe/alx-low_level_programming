@@ -12,34 +12,34 @@
 
 int main(int argc, char *argv[])
 {
-	char *operation;
-	char operator;
-	int a, b, result;
+char *operation;
+char operator;
+int a, b, result;
 
-	int (*fxn)(int, int);
-	/*Check number of arguments*/
-	if (argc != 4)
-	{
-		printf("Error\n");
-		exit(98);
-	}
+int (*fxn)(int, int);
+/*Check number of arguments*/
+if (argc != 4)
+{
+printf("Error\n");
+exit(98);
+}
 
-	operator = argv[2][0];
-	if ((operator != '*' && operator != '+' && operator != '-' && operator != '/'  && operator != '%') || argv[2][1] != '\0')
-	{
-		printf("Error\n");
-		exit(99);
-	}
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	if ((operator == '/' || operator == '%') && b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	operation = argv[2];
-	fxn = get_op_func(operation);
-	result = (*fxn)(a, b);
-	printf("%d\n", result);
-	return (0);
+operator = argv[2][0];
+if ((operator != '*' && operator != '+' && operator != '-' && operator != '/'  && operator != '%') || argv[2][1] != '\0')
+{
+printf("Error\n");
+exit(99);
+}
+a = atoi(argv[1]);
+b = atoi(argv[3]);
+if ((operator == '/' || operator == '%') && b == 0)
+{
+printf("Error\n");
+exit(100);
+}
+operation = argv[2];
+fxn = get_op_func(operation);
+result = (*fxn)(a, b);
+printf("%d\n", result);
+return (0);
 }
