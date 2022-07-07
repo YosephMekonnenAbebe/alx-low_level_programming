@@ -4,6 +4,7 @@
 
 /**
  * sum_them_all - A function that sums
+ * _start - start of a fun2
  * @n: number of parameters
  * @...: Other
  * Return: All
