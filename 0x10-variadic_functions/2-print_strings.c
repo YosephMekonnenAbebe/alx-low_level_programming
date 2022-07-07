@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <stddef.h>
 
-/** print_strings - entry point
+/**
+ * print_strings - entry point
  * @separator: entry string
  * @n: number arguments
  */
