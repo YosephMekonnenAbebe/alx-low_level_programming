@@ -25,3 +25,12 @@ int sum_them_all(const unsigned int n, ...)
 	va_end(ap);
 	return (sum);
 }
+/**
+ * main - start
+ * Return: 0
+ */
+int main()
+{
+	return (0);
+}
+ 
