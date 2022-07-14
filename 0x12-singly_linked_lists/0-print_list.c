@@ -14,9 +14,9 @@ unsigned int idia = 0;
 emper = h;
 while (emper)
 {
-    printf("[%u] %s\n", emper->len, emper->str);
-    emper = emper->next;
-    idia++;
-    }
-    return (idia);
+printf("[%u] %s\n", emper->len, emper->str);
+emper = emper->next;
+idia++;
+}
+return (idia);
 }
