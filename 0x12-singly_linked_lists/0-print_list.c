@@ -9,14 +9,14 @@
 size_t print_list(const list_t *h)
 {
 const list_t *emper;
-	unsigned int idia = 0;
+unsigned int idia = 0;
 
-	emper = h;
-    while(emper)
-    {
-        printf("[%u] %s\n", emper->len, emper->str);
-        emper = emper->next;
-        idia++;
+emper = h;
+while (emper)
+{
+    printf("[%u] %s\n", emper->len, emper->str);
+    emper = emper->next;
+    idia++;
     }
-	return (idia);
-}
+    return (idia);
+    }
