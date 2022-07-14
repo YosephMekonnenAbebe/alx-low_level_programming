@@ -9,9 +9,8 @@
 int _strlen(const char *s)
 {
 	int imax;
-	
 	for (imax = 0; s[imax] != 0; imax++)
-			;
+		;
 	return (imax);
 }
 /**
