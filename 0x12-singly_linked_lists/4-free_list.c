@@ -6,13 +6,13 @@
  */
 void free_list(list_t *head)
 {
-list_t *buf_buf;
+list_t *buf;
 
 while (head != NULL)
 {
-buf_buf = head;
+buf = head;
 head = head->next;
-free(buf_buf->str);
-free(buf_buf);
+free(buf->str);
+free(buf);
 }
 }
