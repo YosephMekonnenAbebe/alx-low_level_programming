@@ -12,7 +12,7 @@ while (head != NULL)
 {
 buf_buf = head;
 head = head->next;
-free(buf_buf->str)
+free(buf_buf->str);
 free (buf_buf);
 }
 }
