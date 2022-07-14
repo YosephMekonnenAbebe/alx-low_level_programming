@@ -8,15 +8,16 @@
  */
 size_t print_list(const list_t *h)
 {
-const list_t *emper;
 unsigned int idiaa = 0;
 
-emper = h;
-while (emper)
+while (h != NULL)
 {
-printf("[%u] %s\n", emper->len, emper->str);
-emper = emper->next;
-idiaa++;
+	if (h->str == NULL)
+		printf("[0] (nil)\n");
+	else
+		printf("[%u] %s\n", h->len, h->str);
+	h = h->next;
+	idiaa++;
 }
 return (idiaa);
 }
