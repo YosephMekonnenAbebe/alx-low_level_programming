@@ -18,8 +18,4 @@ emper = emper->next;
 idia++;
 }
 return (idia);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 2f9b272aacac23b90158e698cb14f81a3900f6d1
