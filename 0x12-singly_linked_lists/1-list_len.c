@@ -12,9 +12,10 @@ const list_t *emper;
 unsigned int idia = 0;
 
 emper = h;
-whiele (emper)
+while (emper)
 {
 emper = emper->next;
 idia++;
 }
-return (idia);}
+return (idia);
+}
