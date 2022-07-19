@@ -9,7 +9,7 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	int traversable_node = 0;
+	unsigned int traversable_node = 0;
 
 	while (traversable_node < index)
 	{
