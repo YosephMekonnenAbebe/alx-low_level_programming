@@ -52,7 +52,6 @@ size_t looped_listint_count(listint_t *head)
  * free_listint_safe - Frees
  * @h: A pointer
  * Return: The size
- * Description: The function
  */
 size_t free_listint_safe(listint_t **h)
 {
