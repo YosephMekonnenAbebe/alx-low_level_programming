@@ -23,8 +23,8 @@ listint_t *find_listint_loop(listint_t *head)
 
 			while (tort != har)
 			{
-				while (tort != har)
-					har = har->next;
+				tort = tort->next;
+				har = har->next;
 			}
 
 			return (tort);
