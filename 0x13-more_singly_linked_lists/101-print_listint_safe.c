@@ -1,36 +1,86 @@
 #include "lists.h"
+#include <stdio.h>
+
+size_t looped_listint_len(const listint_t *head);
+size_t print_listint_safe(const listint_t *head);
 
 /**
- * delete_nodeint_at_index - Deletess
+ * looped_listint_len - Counts
  * @head: A pointerd
- * @index: The index
  * Return: On success on failiure -1
  */
-int delete_nodeint_at_index(listint_t **head, unsigned int index)
+size_t looped_listint_len(const listint_t *head)
 {
-	listint_t *buff, *copy_node = *head;
-	unsigned int inode;
+	const listint_t *tort, *har;
+	size_t nodes = 1;
 
-	if (copy_node == NULL)
-		return (-1);
+	if (head == NULL || head->next == NULL)
+		return (0);
 
-	if (index == 0)
+	tort = head->next;
+	har = (head->next)->next;
+
+	while (har)
 	{
-		*head = (*head)->next;
-		free(copy_node);
-		return (1);
+		if (tort == har)
+		{
+			tort = head;
+			while (tort != har)
+			{
+				nodes++;
+				tort = tort->next;
+				har = har->next;
+			}
+
+			tort = tort->next;
+			while (tort != har)
+			{
+				nodes++;
+				tort = tort->next;
+			}
+
+			return (nodes);
+		}
+
+		tort = tort->next;
+		har = (har->next)->next;
 	}
 
-	for (inode = 0; inode < (index - 1); inode++)
-	{
-		if (copy_node->next == NULL)
-			return (-1);
-
-		copy_node = copy_node->next;
-	}
-
-	buff = copy_node->next;
-	copy_node->next = buff->next;
-	free(buff);
-	return (1);
+	return (0);
 }
+
+/**
+ * print_listint_safe - Prints 
+ * @head: A pointer
+ *
+ * Return: The number
+ */
+size_t print_listint_safe(const listint_t *head)
+{
+	size_t node, idx = 0;
+
+	node = looped_listint_len(head);
+
+	if (node == 0)
+	{
+		for (; head != NULL; node++)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
+		}
+	}
+
+	else
+	{
+		for (idx = 0; idx < node; idx++)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
+		}
+
+		printf("-> [%p] %d\n", (void *)head, head->n);
+	}
+
+	return (node);
+}
+
