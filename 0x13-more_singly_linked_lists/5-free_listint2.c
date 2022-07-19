@@ -5,7 +5,6 @@
  * free_listint2 - Frees the place
  * @head: A pointer input
  * Description: head to NULL placer
- * Return: Nothing
  */
 void free_listint2(listint_t **head)
 {
@@ -13,8 +12,8 @@ void free_listint2(listint_t **head)
 
 	if (head == NULL)
 		return;
-
-	return;
+	
+	while (*head)
 	{
 		zoneof_buffer = (*head)->next;
 		free(*head);
