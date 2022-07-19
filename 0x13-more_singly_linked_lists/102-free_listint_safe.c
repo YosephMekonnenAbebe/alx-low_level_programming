@@ -6,7 +6,7 @@ size_t free_listint_safe(listint_t **h);
 /**
  * looped_listint_count - Counts
  * @head: A pointer
- * zero or one
+ * Return: zero or one
  */
 size_t looped_listint_count(listint_t *head)
 {
