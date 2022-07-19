@@ -8,13 +8,13 @@
  */
 int sum_listint(listint_t *head)
 {
-	int summer_adder = 0;
+	int summmer_addder = 0;
 
 	while (head)
 	{
-		summer_adder += head->n;
+		summmer_addder += head->n;
 		head = head->next;
 	}
 
-	return (Summer_adder);
+	return (summmer_addder);
 }
