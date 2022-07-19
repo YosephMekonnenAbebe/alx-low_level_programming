@@ -4,6 +4,7 @@
 /**
  * sum_listint - add data
  * @head: A pointer input
+ * Return: Null or otherwise
  */
 int sum_listint(listint_t *head)
 {
@@ -11,7 +12,7 @@ int sum_listint(listint_t *head)
 
 	while (head)
 	{
-		summer _adder = summer _adder + head->n;
+		summer_adder = summer_adder + head->n;
 		head = head->next;
 	}
 
