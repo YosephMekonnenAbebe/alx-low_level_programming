@@ -50,7 +50,7 @@ size_t looped_listint_len(const listint_t *head)
 }
 
 /**
- * print_listint_safe - Prints 
+ * print_listint_safe - Prints
  * @head: A pointer
  *
  * Return: The number
