@@ -12,7 +12,7 @@ int sum_listint(listint_t *head)
 
 	while (head)
 	{
-		summer_adder = summer_adder + head->n;
+		summer_adder += head->n;
 		head = head->next;
 	}
 
