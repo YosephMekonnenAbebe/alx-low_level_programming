@@ -3,7 +3,7 @@
 /**
  * delete_nodeint_at_index - Deletes
  * @head: A pointer
- * @index: The index 
+ * @index: The index
  *
  * Return:  negative 1 or positive
  */
