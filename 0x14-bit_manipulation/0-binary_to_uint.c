@@ -1,14 +1,24 @@
 #include "main.h"
+
 /**
- * print_binary - Prints
- * @n: The num
+ * binary_to_uint - converts a binary
+ * @b: pointer char
+ * Return: the converted number
  */
-void print_binary(unsigned long int n)
+unsigned int binary_to_uint(const char *b)
 {
-	unsigned long int  numnumi = n;
+unsigned int azi, vec = 0;
 
-	if (numnumi > 1)
-		print_binary(numnumi >> 1);
-
-	_putchar((numnumi & 1) + '0');
+if (!b)
+return (0);
+for (azi = 0; b[azi] != '\0'; azi++)
+{
+if (b[azi] != '0' && b[azi] != '1')
+return (0);
+if (b[azi] == '1')
+vec = vec * 2 + 1;
+else
+vec = vec * 2 + 0;
+}
+return (vec);
 }
