@@ -5,9 +5,10 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int  numnum = n;
-	if (numnum > 1)
-		print_binary(numnum >> 1);
+	unsigned long int  numnumi = n;
 
-	_putchar((numnum & 1) + '0');
+	if (numnumi > 1)
+		print_binary(numnumi >> 1);
+
+	_putchar((numnumi & 1) + '0');
 }
