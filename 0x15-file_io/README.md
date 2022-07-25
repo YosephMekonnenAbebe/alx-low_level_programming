@@ -7,7 +7,6 @@ What are the 3 standard file descriptors, what are their purpose and what are th
 How to use the I/O system calls open, close, read and write
 What are and how to use the flags O_RDONLY, O_WRONLY, O_RDWR
 What are file permissions, and how to set them when creating a file with the open system call
-
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 All your files should end with a new line
