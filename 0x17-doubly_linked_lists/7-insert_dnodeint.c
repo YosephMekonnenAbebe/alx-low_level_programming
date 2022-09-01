@@ -40,7 +40,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 	yosephnew->n = n;
 	yosephnew->prev = yosephtmp;
-	yosephnew->next = yoseptmp->next;
+	yosephnew->next = yosephtmp->next;
 	yosephtmp->next->prev = yosephnew;
 	yosephtmp->next = yosephnew;
 	return (yosephnew);
