@@ -1,34 +1,40 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - a function that adds a new node at
- * the end of a dlistint_t list
- * @head: pointer to head of list
- * @n: integer value of node
- *
- * Return: the address of the new element, or NULL if it failed
- */
+  * add_dnodeint_end - add a node at the end of a double linked list
+  * @head: header of double linked list
+  * @n: number to set in a new node
+  * Return: address of a new element
+  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *yosephnew_node = malloc(sizeof(dlistint_t)), *yosephtemp_node = *head;
+	dlistint_t *new, *headcopy;
 
-	if (!head || !yosephnew_node)
-	{
+	headcopy = *head;
+
+	if (head == NULL)
 		return (NULL);
-	}
-	yosephnew_node->n = n;
-	yosephnew_node->next = NULL;
-	if (!*head)
+
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
+		return (NULL);
+
+	new->n = n;
+
+	if (*head == NULL)
 	{
-		yosephnew_node->prev = NULL;
-		*head = yosephnew_node;
-		return (*head);
+		new->next = NULL;
+		new->prev = NULL;
+		*head = new;
 	}
-	while (yosephtemp_node->next)
+	else
 	{
-		yosephtemp_node = yosephtemp_node->next;
+		while (headcopy->next != NULL)
+			headcopy = headcopy->next;
+		new->next = NULL;
+		new->prev = headcopy;
+		headcopy->next = new;
 	}
-	yosephtemp_node->next = yosephnew_node;
-	yosephnew_node->prev = yosephtemp_node;
-	return (yosephnew_node);
+
+	return (new);
 }
