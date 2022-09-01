@@ -9,7 +9,7 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	register int yosephlen = 0;
+	register int len = 0;
 
 	if (h == NULL)
 	{
@@ -21,7 +21,7 @@ size_t print_dlistint(const dlistint_t *h)
 
 		printf("%d\n", new_node);
 		h = h->next;
-		yosephlen++;
+		len++;
 	}
-	return (yosephlen);
+	return (len);
 }
