@@ -14,23 +14,23 @@ hash_table_t *hash_table_create(unsigned long int size)
 	 * Validate the table and assign its size
 	 * Traverse the table and set its initial value to null
 	 */
-	hash_table_t *yosephht;
-	unsigned long int yosephi;
+	hash_table_t *ht;
+	unsigned long int i;
 
-	yosephht = malloc(sizeof(hash_table_t));
-	if (yosephht == NULL)
+	ht = malloc(sizeof(hash_table_t));
+	if (ht == NULL)
 	{
 		return (NULL);
 	}
-	yosephht->size = size;
-	yosephht->array = malloc(sizeof(hash_table_t *) * size);
-	if (yosephht->array == NULL)
+	ht->size = size;
+	ht->array = malloc(sizeof(hash_table_t *) * size);
+	if (ht->array == NULL)
 	{
 		return (NULL);
 	}
-	for (yosephi = 0; yosephi < size; yosephi++)
+	for (i = 0; i < size; i++)
 	{
-		yosephht->array[yosephi] = NULL;
+		ht->array[i] = NULL;
 	}
-	return (yosephht);
+	return (ht);
 }
