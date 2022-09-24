@@ -1,12 +1,11 @@
 #include "hash_tables.h"
 
 /**
- * hash_djb2 - Hash function implementing the djb2 algorithm.
- * @str: The string to hash.
+ * hash_djb2 - implementation
+ * @str: string used to
  *
- * Return: The calculated hash.
+ * Return: hash value
  */
-
 unsigned long int hash_djb2(const unsigned char *str)
 {
 	unsigned long int yosephhash;
